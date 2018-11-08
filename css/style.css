@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    color: #FF0000;
+}
+h3 {
+    color: #C80000;
+    text-decoration: underline;
+}
+body {
+    background-image: url("../img/grey-background.jpg");
+    font-family: 'Kumar One Outline', cursive;
+    background-color: #808080;
+}
+
+ul > li{
+    list-style: square;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px #C80000;
+    text-align: center;
+}
+
+th,td {
+    padding: 20px;
+}
+
+img {
+    width: 20em;
+    height:auto;
+    border: 1px solid red;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color: deeppink;
+}
