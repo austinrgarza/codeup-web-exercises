@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.box {
+    padding: 10px;
+    margin: .5em 0;
+    text-align: center;
+}
+
+.row {
+    padding 1em;
+    width: 100%;
+}
+
+.column {
+    float: left;
+}
+
+.column.one-third {
+    width: 33.33%;
+}
+
+.column.one-half {
+    width: 50%;
+}
+
+.column.one-forth {
+    width: 25%;
+}
+.column.one-eighth {
+    width: 12.5%;
+}
+
+.column.one-sixth {
+    width: 16.66%
+}
+
+.full   {
+    width: 100%;
+
+}
