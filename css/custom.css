@@ -1,6 +1,6 @@
 .jumbotron  {
     background-image: url("https://java.codeup.com/examples/bootstrap/pizza.png");
-    height: auto;
+    background-size: cover;
 
 
 }
@@ -8,6 +8,8 @@
     background-color: white;
     text-align: center;
     opacity: 0.6;
+
+
 
 }
 div.jumbotron{
@@ -34,4 +36,42 @@ ul.list-group{
 
 }
 
+.card {
+    margin: .5em 0;
+}
+
+#list-item-background-color{
+    background-color: #cccccc;
+
+}
+
+#align-right{
+    position: relative;
+    padding: 1em;
+}
+
+
+.form-group {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+ .list-group-item {
+     margin-right: 1em;
+ }
+
+ .btn-group {
+  margin: 1em;
+     float: right;
+     right: 0;
+ }
+
+ .btn-secondary{
+     background-color: #007bff;
+     border-color: #cccccc;
+
+ }
+ .btn-primary{
+     float: right;
+ }
 
