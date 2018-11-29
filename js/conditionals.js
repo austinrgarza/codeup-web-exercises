@@ -1,11 +1,5 @@
 "use strict";
-// var addNumber = confirm("Would you like to add a number?");
-//     if (addNumber) {
-//         prompt("Enter number:")
-//     }
-//     else {alert("Aborted")
-//
-//     }
+
 
 
 
