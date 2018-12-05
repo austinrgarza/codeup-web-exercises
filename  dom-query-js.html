@@ -25,56 +25,101 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+    <button id="btn1">Step 1</button>
+    <button id="btn2">Step 2</button>
+    <button id="btn3">Step 3</button>
+    <button id="btn4">Step 4</button>
+
+
 <script>
-    (function() {
-        "use strict";
+    "use strict";
+    // (function() {
         // TODO: Uncomment next line and get the main header element by id
-        var mainHeader = document.getElementById('main-header');
-
-
+        // var mainHeader = document.getElementById('main-header');
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
-        mainHeader.innerHTML = 'JavaScript is Cool!';
+        // mainHeader.innerHTML = 'JavaScript is Cool!';
 
         // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById('sub-header');
-
+        // var subHeader = document.getElementById('sub-header');
+        //
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = 'blue';
+        // subHeader.style.color = 'blue';
         // TODO: Uncomment the next line and get all list items
         // TODO: Set text color on every other list item to grey
-        var listColor = function() {
-                var list = document.getElementsByTagName('li');
-
-                for (var i = 0, l = list.length; i < l; i++) {
-                    if (i % 2 === 0) {
-                        list[i].style.color = 'grey';
-                    }
-                }
-            };
-            listColor();
-
-
+        // var listItems = function() {
+        //         var list = document.getElementsByTagName('li');
+        //
+        //         for (var i = 0, l = list.length; i < l; i++) {
+        //             if (i % 2 === 0) {
+        //                 list[i].style.color = 'grey';
+        //             }
+        //         }
+        //     };
+        //     listColor();
 
         // TODO: Set text color of li with dbid = 1 to blue
 
-        var firstLiColor = function () {
-            var liBlue = document.getElementsByTagName("li")[0];
-            liBlue.style.color = 'blue';
-        };
+        // var firstLiColor = function () {
+        //     var liBlue = document.getElementsByTagName("li")[0];
+        //     liBlue.style.color = 'blue';
+        // };
 
-        firstLiColor();
+        // firstLiColor();
+
+        // listColor[0].style.color = 'blue';
 
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        var subParagraphs = document.getElementsByClassName('sub-paragraph');
-
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        // var subParagraphs = document.getElementsByClassName('sub-paragraph');
+        //
+        // subHeader.innerText = 'Mission Accomplished';
 
-        subHeader.innerText = 'Mission Accomplished';
+    // })();
 
-    })();
+    var listener1 = function (event) {
+        var mainHeader = document.getElementById('main-header');
+        mainHeader.innerHTML = 'JavaScript is Cool!';
+    };
+    document.getElementById('btn1').addEventListener('click', listener1, false);
+
+    var listener2 = function (event) {
+        var subHeader = document.getElementById('sub-header');
+        subHeader.style.color = 'blue';
+        subHeader.innerText = 'Mission Accomplished'
+    };
+    document.getElementById('btn2').addEventListener('click', listener2, false);
+
+    var listener3 = function (event) {
+        var listColor = function() {
+            var list = document.getElementsByTagName('li');
+
+                    for (var i = 0, l = list.length; i < l; i++) {
+                        if (i % 2 === 0) {
+                            list[i].style.color = 'grey';
+                        }
+                    }
+                };
+                listColor();
+
+
+    };
+    document.getElementById('btn3').addEventListener('click', listener3, false);
+
+    var listener4 = function (event) {
+        var firstLiColor = function () {
+                var liBlue = document.getElementsByTagName("li")[0];
+                liBlue.style.color = 'blue';
+            };
+
+            firstLiColor();
+
+
+    };
+    document.getElementById('btn4').addEventListener('click', listener4, false);
+
 </script>
 
 
