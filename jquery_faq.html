@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .invisible{
+            display: none;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <dl>
+        <dt>Name: </dt>
+        <dd class="invisible">Austin</dd>
+
+        <dt>Age: </dt>
+        <dd class="invisible">24</dd>
+
+        <dt>Gender: </dt>
+        <dd class="invisible">Male</dd>
+
+        <dt>Day of Birth:</dt>
+        <dd class="invisible">9 Jan 1994</dd>
+    </dl>
+
+    <button id="remove-class">Toggle</button>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script>$('document').ready(function() {
+        $('#remove-class').click(function(event) {
+            event.preventDefault();
+            $('dd').toggle('invisible');
+        });
+        $('dd').click(function () {
+            $(this).addClass('highlight')
+        })
+        $('dd').dblclick(function () {
+            $(this).removeClass('highlight')
+        })
+
+    });
+    </script>
+</body>
+</html>
