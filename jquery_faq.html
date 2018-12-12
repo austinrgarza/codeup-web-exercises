@@ -10,6 +10,10 @@
         .highlight {
             background-color: yellow;
         }
+
+        .bolded {
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>
@@ -30,8 +34,51 @@
 
     <button id="remove-class">Toggle</button>
 
+    <h3 id="national-parks-heading">National Parks</h3>
+    <ul id="national-parks">
+        <li>Arches</li>
+        <li>Badlands</li>
+        <li>Carlsbad Caverns</li>
+        <li>Denali</li>
+        <li>Everglades</li>
+    </ul>
+
+    <h3>State Parks of Texas</h3>
+    <ul id="state-parks-texas">
+        <li>Abilene</li>
+        <li>Big Bend</li>
+        <li>Choke Canyon</li>
+        <li>Davis Mountains</li>
+        <li >Enchanted Rock</li>
+    </ul>
+
+    <h3>State Parks of Pendelton</h3>
+    <ul id="state-parks-pendelton">
+        <li>Horno</li>
+        <li>Mainside</li>
+        <li>Pulgas</li>
+        <li>Air Field</li>
+        <li>Main Px</li>
+    </ul>
+    <button id="background-button">Change background color</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="js/jquery-2.2.4.min.js"></script>
-    <script>$('document').ready(function() {
+
+    <script>
+        $('document').ready(function() {
         $('#remove-class').click(function(event) {
             event.preventDefault();
             $('dd').toggle('invisible');
@@ -43,7 +90,23 @@
             $(this).removeClass('highlight')
         })
 
-    });
+            $('#background-button').click(function () {
+                // $( "li" ).siblings( ".last-li" ).css( "background", "yellow" );
+                $('ul').each(function () {
+                    $(this).children().last().css("background", "yellow")
+                })
+            })
+
+            $('h3').click(function () {
+                    $(this).next().css('font-weight','bold')
+                })
+            })
+
+            $('ul').click(function () {
+                $(this).children().first().css('color','blue')
+            })
+
+    // });
     </script>
 </body>
 </html>
